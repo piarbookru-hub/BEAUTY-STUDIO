@@ -43,8 +43,8 @@
         .btn-white { background: #fff; color: #c97b7b; border-radius: 50px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
         .btn-white:hover { background: #3a2e2e; color: #fff; transform: translateY(-3px); box-shadow: 0 15px 40px rgba(0,0,0,0.2); }
         
-        /* СЕКЦИИ: сжаты в 2.5 раза */
-        .section { padding: 50px 20px; max-width: 1200px; margin: 0 auto; }
+        /* СЕКЦИИ: отступы ВДВОЕ меньше (было 50px) */
+        .section { padding: 25px 20px; max-width: 1200px; margin: 0 auto; }
         .section-title { text-align: center; margin-bottom: 28px; }
         .section-subtitle { font-family: 'Montserrat', sans-serif; font-size: 11px; color: #c97b7b; text-transform: uppercase; letter-spacing: 4px; margin-bottom: 10px; font-weight: 600; }
         .section-title h2 { font-size: clamp(1.6rem, 4vw, 36px); color: #3a2e2e; font-weight: 600; position: relative; display: inline-block; }
@@ -173,7 +173,8 @@
             .hero p { font-size: 13.5px; margin-bottom: 18px; }
             .btn { padding: 12px 24px; font-size: 11px; letter-spacing: 1.5px; gap: 8px; }
             
-            .section { padding: 28px 14px; }
+            /* СЕКЦИИ НА СМАРТФОНЕ: отступы ВДВОЕ меньше (было 28px) */
+            .section { padding: 14px 14px; }
             .section-title { margin-bottom: 16px; }
             .section-title h2::after { bottom: -8px; width: 40px; }
             

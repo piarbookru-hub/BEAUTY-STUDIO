@@ -122,6 +122,10 @@
         .contact-icon { width: 42px; height: 42px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #c97b7b; font-size: 17px; box-shadow: 0 5px 15px rgba(201,123,123,0.15); flex-shrink: 0; }
         .contact-detail strong { display: block; margin-bottom: 3px; color: #3a2e2e; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; }
         .contact-detail span { color: #666; font-weight: 300; font-size: 14px; }
+        /* ===== ЯНДЕКС.КАРТА ===== */
+        .contact-map { margin-top: 18px; border-radius: 12px; overflow: hidden; height: 220px; box-shadow: 0 10px 30px rgba(201,123,123,0.12); border: 1px solid #f0e6e6; }
+        .contact-map iframe { width: 100%; height: 100%; border: 0; }
+        /* ===== КОНЕЦ КАРТЫ ===== */
         .contact-form { background: #fff; padding: 26px; border-radius: 12px; box-shadow: 0 15px 50px rgba(0,0,0,0.06); }
         .contact-form h3 { font-size: 22px; margin-bottom: 16px; color: #3a2e2e; font-weight: 600; }
         .form-group { margin-bottom: 14px; }
@@ -222,6 +226,8 @@
             .contact-icon { width: 38px; height: 38px; font-size: 15px; }
             .contact-detail strong { font-size: 11px; }
             .contact-detail span { font-size: 13px; }
+            /* Карта на мобильном — во всю ширину */
+            .contact-map { height: 200px; margin-top: 14px; }
             .contact-form { padding: 18px 16px; }
             .contact-form h3 { font-size: 19px; margin-bottom: 12px; }
             .form-group { margin-bottom: 12px; }
@@ -236,6 +242,7 @@
         @media (max-width: 400px) {
             .features { grid-template-columns: 1fr; }
             .gallery-item img { height: 130px; }
+            .contact-map { height: 180px; }
         }
     </style>
 </head>
@@ -499,6 +506,9 @@
                         <strong>Email</strong>
                         <span>info@beautystudio.ru</span>
                     </div>
+                </div>
+                <div class="contact-map">
+                    <iframe src="https://yandex.ru/map-widget/v1/?ll=37.615560%2C55.752220&z=16" allowfullscreen loading="lazy"></iframe>
                 </div>
             </div>
             <div class="contact-form">
